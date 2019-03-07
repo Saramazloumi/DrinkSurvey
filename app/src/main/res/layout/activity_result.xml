@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context=".ResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="#111"
+            android:text="Results" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textViewDrink"
+                    android:layout_width="wrap_content"
+                    android:text="Drink"
+                    style="@style/table_head"/>
+
+                <TextView
+                    android:id="@+id/textViewApple"
+                    android:layout_width="wrap_content"
+                    android:text="APPLE"
+                    style="@style/table_head"/>
+
+                <TextView
+                    android:id="@+id/textViewOrange"
+                    android:layout_width="wrap_content"
+                    android:text="ORANGE"
+                    style="@style/table_head"/>
+
+                <TextView
+                    android:id="@+id/textViewMixed"
+                    android:layout_width="wrap_content"
+                    android:text="MIXED"
+                    style="@style/table_head"/>
+
+                <TextView
+                    android:id="@+id/textViewCoca"
+                    android:layout_width="wrap_content"
+                    android:text="COCA"
+                    style="@style/table_head"/>
+
+                <TextView
+                    android:id="@+id/textViewSprite"
+                    android:layout_width="wrap_content"
+                    android:text="SPRITE"
+                    style="@style/table_head"/>
+
+                <TextView
+                    android:id="@+id/textView7Up"
+                    android:layout_width="wrap_content"
+                    android:text="SEVEN-UP"
+                    style="@style/table_head"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textViewTotal"
+                    android:layout_width="wrap_content"
+                    android:text="TOTAL"
+                    style="@style/table_head"/>
+
+                <TextView
+                    android:id="@+id/textViewTA"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    style="@style/data_table"/>
+
+                <TextView
+                    android:id="@+id/textViewTO"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    style="@style/data_table"/>
+
+                <TextView
+                    android:id="@+id/textViewTM"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    style="@style/data_table"/>
+
+                <TextView
+                    android:id="@+id/textViewTC"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    style="@style/data_table"/>
+
+                <TextView
+                    android:id="@+id/textViewTS"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    style="@style/data_table"/>
+
+                <TextView
+                    android:id="@+id/textViewT7"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    style="@style/data_table"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textViewPercentage"
+                    android:layout_width="wrap_content"
+                    android:text="PERCENTAGE"
+                    style="@style/table_head"/>
+
+                <TextView
+                    android:id="@+id/textViewPA"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    style="@style/data_table"/>
+
+                <TextView
+                    android:id="@+id/textViewPO"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    style="@style/data_table"/>
+
+                <TextView
+                    android:id="@+id/textViewPM"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    style="@style/data_table"/>
+
+                <TextView
+                    android:id="@+id/textViewPC"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    style="@style/data_table"/>
+
+                <TextView
+                    android:id="@+id/textViewPS"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    style="@style/data_table"/>
+
+                <TextView
+                    android:id="@+id/textViewP7"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    style="@style/data_table"/>
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="Return"
+            android:textColor="#FFF"
+            android:background="#1d0480"/>
+    </LinearLayout>
+</LinearLayout>

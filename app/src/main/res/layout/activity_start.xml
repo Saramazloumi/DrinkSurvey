@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".StartActivity">
+
+
+    <TextView
+        android:id="@+id/textViewCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:text="Drinks Survey" />
+
+    <TextView
+        android:id="@+id/textViewClientNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewCaption"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:text="Client Number: " />
+
+    <EditText
+        android:id="@+id/editTextClientNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/textViewClientNumber"
+        app:layout_constraintBottom_toBottomOf="@id/textViewClientNumber"
+        app:layout_constraintStart_toEndOf="@id/textViewClientNumber"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textViewDrinkType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewClientNumber"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:text="Drinks type: " />
+
+    <Spinner
+        android:id="@+id/spinnerDrinks"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="@id/textViewDrinkType"
+        app:layout_constraintBottom_toBottomOf="@id/textViewDrinkType"
+        android:entries="@array/drinks"
+        />
+
+    <TextView
+        android:id="@+id/textViewDrinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewDrinkType"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Drinks: " />
+
+    <RadioGroup
+        android:id="@+id/rbGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/textViewDrinks"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="90dp">
+
+        <RadioButton
+            android:id="@+id/rbFirstDrink"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/rbSecondDrink"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/rbThirdDrink"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewNbOfCups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewDrinks"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:text="Number of cups per day: " />
+
+    <EditText
+        android:id="@+id/editTextNbOfCups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/textViewNbOfCups"
+        app:layout_constraintBottom_toBottomOf="@id/textViewNbOfCups"
+        app:layout_constraintStart_toEndOf="@id/textViewNbOfCups"
+        android:layout_marginLeft="5dp"
+        android:ems="6"
+        android:inputType="number"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#1937a6"
+        android:textColor="#FFF"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/btnNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="10dp"
+        android:background="#1937a6"
+        android:textColor="#FFF"
+        android:text="New" />
+
+    <Button
+        android:id="@+id/btnResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#1937a6"
+        android:textColor="#FFF"
+        android:text="Result" />
+
+</android.support.constraint.ConstraintLayout>
